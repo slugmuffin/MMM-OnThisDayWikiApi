@@ -98,7 +98,6 @@ All configuration options are *optional* so the module works out of the box.
 | `sortItems` | Whether or not to sort the items by year recent->past. <br><br> **Possible values:**`true` - `false` <br> **Default value:** `true` |
 | `maxItems` | Limits the total amount of items stored (after sort). (0 for unlimited) <br><br> **Possible values:**`0` - `...` <br> **Default value:** `0` |
 | `prohibitedWords` | Remove item if one of these words is found anywhere in the title (case insensitive and greedy matching) <br><br> **Possible values:** `['word']` or `['word1','word2',...]` |
-|
 
 ## Language
 
@@ -119,7 +118,6 @@ Currently supported languages:
 | Español 	| Spanish 	|es|
 | العربية 	| Arabic  	|ar|
 | Bosanski 	| Bosnian 	|bs|
-|
 
 ## Problems
 
