@@ -1,0 +1,56 @@
+{#
+ # MagicMirror²
+ # Module: MMM-OnThisDayWikiApi
+ #
+ # By Ryan Seeber (github.com/slugmuffin)
+ # MIT Licensed.
+ #}
+
+{% macro escapeText(text) %}
+    {{ text }}
+{% endmacro %}
+
+{% if error %}
+    <div class="small dimmed">
+        {{ "MODULE_CONFIG_ERROR" | translate({MODULE_NAME: "MMM-OnThisWayWikiApi", ERROR: error}) | safe }}
+    </div>
+{% elseif loaded %}
+    {% if empty %}
+        <div class="small dimmed">{{ "ONTHISDAY_NO_ITEMS" | translate | safe }}</div>
+    {% else %}
+        {% if config.showAsList %}
+            {% if config.showTitle %}
+                <div class="title dimmed xsmall normal" style="max-width:{{config.maxWidth}}px;">{{ config.title }}</div>
+            {% endif %}
+            <ul class="MMM-OnThisDayWikiApi-list" style="max-width:{{config.maxWidth}}px;">
+                {% for item in items %}
+                    <li>
+                        <span class="title bright xsmall light">{{ item.year }} – </span>
+                        <span class="text xsmall light{{ ' no-wrap' if not config.wrapTitle }}">
+                            {{ escapeText(item.text) }}
+                        </span>
+                    </li>
+                {% endfor %}
+            </ul>
+        {% else %}
+            <div class="container small normal MMM-OnThisDayWikiApi-single">
+                {% if config.showTitle %}
+                    <div class="title dimmed">
+                        {{ config.title }}
+                        <span class="bright light">{{ activeItem.year }}</span>:
+                    </div>
+                {% endif %}
+                <div class="title small normal">
+                    {% if not config.showTitle %}
+                        <span class="bright light">{{ activeItem.year }}</span><span class="dimmed">:</span>
+                    {% endif %}
+                    <span class="bright light {{ ' no-wrap' if not config.wrapTitle }}">
+                    {{ escapeText(activeItem.text) }}
+                    </span>
+                </div>
+            </div>
+        {% endif %}
+    {% endif %}
+{% else %}
+    <div class="small dimmed">{{ "LOADING" | translate | safe }}</div>
+{% endif %}

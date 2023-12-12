@@ -1,0 +1,33 @@
+.MMM-OnThisDayWikiApi {
+    max-width: 100vh;
+    height: auto;
+    max-height: auto;
+    line-height: 1em;
+}
+
+.MMM-OnThisDayWikiApi .title {
+    text-align: justify;
+    margin-bottom: 0.5em;
+    text-transform: uppercase;
+}
+
+.MMM-OnThisDayWikiApi-single .title {
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.MMM-OnThisDayWikiApi ul {
+    padding: 0;
+    margin-top: 0.5em;
+}
+
+.MMM-OnThisDayWikiApi-list {
+    list-style: none;
+    padding: 0;
+}
+
+.MMM-OnThisDayWikiApi-list li {
+    text-align: justify;
+    margin-bottom: 0.5em;
+}
+

@@ -1,0 +1,27 @@
+{
+  "name": "MMM-OnThisDayWikiApi",
+  "version": "0.1.0",
+  "description": "MagicMirror² module which displays events from Wikipedia's 'On This Day' using the Wikimedia API.",
+  "author": "Ryan Seeber",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/slugmuffin/MMM-OnThisDayWikiApi.git"
+  },
+  "keywords": [
+    "events",
+    "history",
+    "wikipedia"
+  ],
+  "main": "MMM-OnThisDayWikiApi.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "request": "^2.83.0"
+  },
+  "bugs": {
+    "url": "https://github.com/slugmuffin/MMM-OnThisDayWikiApi/issues"
+  },
+  "homepage": "https://github.com/slugmuffin/MMM-OnThisDayWikiApi#readme"
+}
