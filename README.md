@@ -83,7 +83,7 @@ All configuration options are *optional* so the module works out of the box.
 
 | Option | Description |
 | ---------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `language` | Language code. <br><br> **Possible values:** `en` (English) <br> `es` (Spanish). <br> **NOTE:** *See below.* <br> **Default value:** `en` |
+| `language` | Language code. <br><br> **Possible values:** <br> **NOTE:** *See below.* [Language](#language) <br> **Default value:** `en` |
 | `type` | **Possible values:**<br>`all`: Returns all types<br>`selected`: Curated set of events that occurred on the given date<br>`births`: Notable people born on the given date<br>`deaths`: Notable people who died on the given date<br>`holidays`: Fixed holidays celebrated on the given date<br>`events`: Events that occurred on the given date that are not included in another type <br> **Default value:** `selected`|
 | `showAsList` | Display the event items as a list. <br><br> **Possible values:** `true` or `false` <br> **Default value:** `false` |
 | `maxDisplayList` | Total amount of items to display at once while cycling through (when shown as a list). <br><br> **Possible values:**`1` - `...` <br> **Default value:** `4` |
