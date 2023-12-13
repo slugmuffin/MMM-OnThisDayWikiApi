@@ -4,9 +4,14 @@
 
 This is a module for the [MagicMirror²](https://github.com/MichMich/MagicMirror/). It displays historical events from Wikipedia based on the current date using the free Wikimedia API. The event items will scroll through with the time-based (`updateInterval`).
 
-### Default Configuration:
+## Screenshots
+
+### Default Configuration
+
 ![Screenshot](screenshot/single_line.png)
-### Configured to show as list:
+
+### Configured to show as list
+
 ![Screenshot](screenshot/show_as_list.png)
 
 ## Install the module
@@ -21,18 +26,6 @@ Clone this module from Github
 
 ```sh
 git clone https://github.com/slugmuffin/MMM-OnThisDayWikiApi
-```
-
-Switch to newly created module folder
-
-```sh
-cd MMM-OnThisDayWikiApi
-```
-
-Install dependencies
-
-```sh
-npm install
 ```
 
 After adding this module to your config (see below) restart your MagicMirror².
@@ -51,14 +44,6 @@ Pull changes from Github
 git pull
 ```
 
-Install new dependencies
-
-```sh
-npm install
-```
-
-Since this repository ignores the automatically generated `package-lock.json`, pulling changes should always work. If not, try to reset your module with `git reset --hard` before pulling new changes.
-
 ## Using the module
 
 To use this module, add the following configuration block to the modules array in the `config/config.js` file:
@@ -67,19 +52,19 @@ To use this module, add the following configuration block to the modules array i
 let config = {
     modules: [
         {
-            module: 'MMM-OnThisDayWikiApi',
-            position: 'bottom_bar', // All available positions
+            module: "MMM-OnThisDayWikiApi",
+            position: "bottom_bar", // All available positions
             config: {
                 // See below for configurable options, this is optional
             },
         },
-    ],
+    ]
 };
 ```
 
 ## Configuration options
 
-All configuration options are *optional* so the module works out of the box.
+All configuration options are _optional_ so the module works out of the box.
 
 | Option | Description |
 | ---------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -107,17 +92,17 @@ To translate/customize the `title`, use the `config`.
 **Defaults to english.**
 
 Currently supported languages:
-| Language | Language | code|
-| ------- | ------- | ------| 
-| English 	| English 	|en|
-| Deutsch 	| German  	|de|
-| Français 	| French  	|fr|
-| Svenska 	| Swedish 	|sv|
-| Português	| Portuguese 	|pt|
-| Русский 	| Russian 	|ru|
-| Español 	| Spanish 	|es|
-| العربية 	| Arabic  	|ar|
-| Bosanski 	| Bosnian 	|bs|
+| Language  | Language   | code |
+| --------- | ---------- | ---- |
+| English   | English    | en   |
+| Deutsch   | German     | de   |
+| Français  | French     | fr   |
+| Svenska   | Swedish    | sv   |
+| Português | Portuguese | pt   |
+| Русский   | Russian    | ru   |
+| Español   | Spanish    | es   |
+| العربية     | Arabic     | ar   |
+| Bosanski  | Bosnian    | bs   |
 
 ## Problems
 
@@ -128,7 +113,9 @@ If you have any problems or questions, feel free to open an issue. There are man
 See [LICENSE](LICENSE.txt)
 
 ## Thanks
+
 Thank you to:
+
 - [MagicMirror²](https://github.com/MichMich/MagicMirror/) (specifically `newsfeed`)
 - [MMM-OnThisDay](https://github.com/nkl-kst/MMM-OnThisDay)
 - [MMM-DailyBibleVerse](https://github.com/arthurgarzajr/MMM-DailyBibleVerse)
